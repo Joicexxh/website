@@ -1,0 +1,195 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Portfólio - Joice e Maisa</title> 
+    <style> 
+        body { 
+            font-family: Arial, sans-serif; 
+            line-height: 1.6; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #fce4ec; 
+            color: #4a148c; 
+        } 
+ 
+        header { 
+            background-color: #ce93d8; 
+            color: white; 
+            padding: 1rem 0; 
+            text-align: center; 
+        } 
+ 
+        header h1 { 
+            margin: 0; 
+        } 
+ 
+        nav ul { 
+            list-style: none; 
+            padding: 0; 
+            margin: 0; 
+            display: flex; 
+            justify-content: center; 
+            gap: 1rem; 
+        } 
+ 
+        nav ul li a { 
+            color: white; 
+            text-decoration: none; 
+            font-weight: bold; 
+        } 
+ 
+        nav ul li a:hover { 
+            text-decoration: underline; 
+        } 
+ 
+        main { 
+            padding: 2rem; 
+        } 
+ 
+        section { 
+            margin-bottom: 2rem; 
+        } 
+ 
+        h2 { 
+            color: #880e4f; 
+            border-bottom: 2px solid #880e4f; 
+            padding-bottom: 0.5rem; 
+            margin-bottom: 1rem; 
+        } 
+ 
+        .flex-container { 
+            display: flex; 
+            align-items: center; 
+            gap: 1rem; 
+            margin-bottom: 2rem; 
+        } 
+ 
+        .flex-container input { 
+            display: none; 
+        } 
+ 
+        
+        .flex-container img { 
+            width: 250px; 
+            height: auto; 
+            border-radius: 8px; 
+            transition: transform 0.3s ease-in-out; 
+            cursor: pointer; 
+        } 
+ 
+         
+        .flex-container input:checked + label img { 
+            transform: scale(2);  
+            z-index: 10; } 
+ 
+        .text-box { 
+            background-color: #f8bbd0; 
+            padding: 1rem; 
+            border-radius: 8px; 
+            border: 1px solid #880e4f; 
+            color: #4a148c; 
+            flex: 1; 
+        } 
+ 
+        .interest-text { 
+            margin-bottom: 0.5rem; 
+            font-weight: bold; 
+            color: #6a1b9a; 
+        } 
+ 
+        footer { 
+            text-align: center; 
+            background-color: #ad1457; 
+            color: white; 
+            padding: 1rem 0; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <header> 
+        <h1>Nosso Portfólio</h1> 
+        <nav> 
+            <ul> 
+                <li><a href="index.html">Início</a></li> 
+                <li><a href="portifolio.html">Portfólio</a></li> 
+            </ul> 
+        </nav> 
+    </header> 
+ 
+    <main> 
+        <section> 
+            <h2>Interesses da Joice</h2> 
+            <div class="flex-container"> 
+                <input type="checkbox" id="brownie"> 
+                <label for="brownie"> 
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8vQhGTBUf3mx5Um8gzBLKyVqhh8UOEOwcxxKX8whfDk15KsNuTZFbYqtw&s=10" alt="Brownie decorado"> 
+                </label> 
+                <div class="text-box"> 
+                    <div class="interest-text">Confeitaria: Adoro experimentar receitas novas, especialmente bolos e doces decorativos. Criar algo bonito e delicioso é minha paixão.</div> 
+                    <strong>Curiosidade:</strong> Você sabia que o brownie foi criado por engano quando um confeiteiro esqueceu de adicionar fermento à massa do bolo? Essa deliciosa invenção se tornou um clássico amado mundialmente. 
+                </div> 
+            </div> 
+            <div class="flex-container"> 
+                <input type="checkbox" id="livros-joice"> 
+                <label for="livros-joice"> 
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfJQOoYWuhFPpCG1BPR7H7vBhacc5XUxizi_V0IfhD3-lN_0dNImcUbC4&s=10" alt="Livros empilhados"> 
+                </label> 
+                <div class="text-box"> 
+                    <div class="interest-text">Livros: Meu refúgio está nos romances e na ficção científica. Sempre tenho um livro por perto para mergulhar em novas histórias.</div>
+                    <strong>Curiosidade:</strong> O primeiro romance do mundo foi "Genji Monogatari", escrito no Japão no século XI. 
+                </div> 
+            </div> 
+            <div class="flex-container"> 
+                <input type="checkbox" id="croche"> 
+                <label for="croche"> 
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0mWKHAvWgerDFPlVtdLvj1Y7l-SovmurWcw&usqp=CAU" alt="Peças de crochê"> 
+                </label> 
+                <div class="text-box"> 
+                    <div class="interest-text">Crochê: Um hobby criativo e relaxante. Adoro confeccionar roupas, acessórios e até itens de decoração.</div> 
+                    <strong>Curiosidade:</strong> O crochê se popularizou no século XIX como uma alternativa acessível aos rendados caros da época. 
+                </div> 
+            </div> 
+        </section> 
+ 
+        <section> 
+            <h2>Interesses da Maisa</h2> 
+            <div class="flex-container"> 
+                <input type="checkbox" id="filmes"> 
+                <label for="filmes"> 
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHF75LYRaKGIuhAsj0ZRvmBGi6wcFzd4nh1XXMCy2NZKd8oHrX2ViRET0&s=10" alt="Tela de cinema"> 
+                </label> 
+                <div class="text-box"> 
+                    <div class="interest-text">Filmes: Sou apaixonada por suspense e aventura. Filmes me transportam para universos incríveis e cheios de emoção.</div> 
+                    <strong>Curiosidade:</strong> O filme mais longo do mundo é "Ambiancé", com duração de 720 horas! 
+                </div> 
+            </div> 
+            <div class="flex-container"> 
+                <input type="checkbox" id="jogos"> 
+                <label for="jogos"> 
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnYnlc3vi7x1I-ZZgQr8RmfF4ptQxhczfaww&usqp=CAU" alt="Controle de videogame"> 
+                </label> 
+                <div class="text-box"> 
+                    <div class="interest-text">Jogos: RPGs e jogos de estratégia são meus favoritos. Gosto de desafios que testam criatividade e raciocínio.</div> 
+                    <strong>Curiosidade:</strong> O primeiro jogo de videogame da história foi criado em 1958 e se chamava "Tennis for Two". 
+                </div> 
+            </div> 
+            <div class="flex-container"> 
+                <input type="checkbox" id="livros-maisa"> 
+                <label for="livros-maisa"> 
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbAi5cn1bscBAeygZxWXcOJ4NQdfevUbhBbg&usqp=CAU" alt="Livros clássicos"> 
+                </label> 
+                <div class="text-box"> 
+                    <div class="interest-text">Livros: Amo fantasia e histórias clássicas que me fazem viajar no tempo e no espaço.</div> 
+                    <strong>Curiosidade:</strong> A série "Harry Potter" foi traduzida para mais de 80 idiomas ao redor do mundo. 
+                </div> 
+            </div> 
+        </section> 
+    </main> 
+ 
+    <footer> 
+        <p>&copy; 2025 - Criado por Joice Hellen e Maisa Alves</p> 
+    </footer> 
+</body> 
+</html>

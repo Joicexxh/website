@@ -1,0 +1,159 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Joice e Maisa - Página Inicial</title> 
+    <style> 
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #fce4ec; 
+            color: #4a148c; 
+        } 
+ 
+        header { 
+            background-color: #ce93d8;  
+            color: white; 
+            text-align: center; 
+            padding: 2rem 0; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            position: relative; 
+        } 
+ 
+        header h1 { 
+            margin: 0; 
+            font-size: 2.5rem; 
+        } 
+ 
+        .bow { 
+            position: absolute; 
+            top: 10px; 
+            width: 50px; 
+            height: 50px; 
+        } 
+ 
+        .bow-left { 
+            left: 2px; 
+            height: 150px; 
+            width: 150px; 
+        } 
+ 
+        .bow-right { 
+            right: 2px; 
+            height: 150px; 
+            width: 150px; 
+        } 
+ 
+        nav ul { 
+            list-style: none; 
+            padding: 0; 
+            display: flex; 
+            justify-content: center; 
+            gap: 2rem; 
+            margin-top: 1rem; 
+        } 
+ 
+        nav ul li a { 
+            color: white; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 1.2rem; 
+        } 
+ 
+        nav ul li a:hover { 
+            text-decoration: underline; 
+            color: #f8bbd0; 
+        } 
+ 
+        .welcome-section { 
+            text-align: center; 
+            margin: 3rem 0; 
+        } 
+ 
+        .welcome-section h2 { 
+            font-size: 2.5rem; 
+            color: #880e4f;  
+            margin-bottom: 1.5rem; 
+        } 
+ 
+        .about { 
+            text-align: center; 
+            margin: 2rem 0; 
+            font-size: 1.2rem; 
+            color: #6a1b9a; 
+            padding: 1rem; 
+            background-color: #f8bbd0; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        } 
+ 
+        .highlight { 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            margin: 3rem 0; 
+            padding: 1rem; 
+        } 
+ 
+        .highlight input { 
+            display: none; 
+        } 
+ 
+        .highlight img { 
+            width: 300px; 
+            height: auto; 
+            border-radius: 15px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            cursor: pointer; 
+            transition: transform 0.3s ease-in-out; 
+        } 
+ 
+         
+        .highlight input:checked + label img { 
+            transform: scale(3);  
+        } 
+ 
+        footer { 
+            text-align: center; 
+            background-color: #ad1457; 
+            color: white; 
+            padding: 1rem 0; 
+            margin-top: 2rem; 
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); 
+        } 
+    </style> 
+</head> 
+<body> 
+    <header> 
+        <h1>Bem-vindos ao nosso site!</h1> 
+        <nav> 
+            <ul> 
+                <li><a href="index.html">Início</a></li> 
+                <li><a href="portifolio.html">Portfólio</a></li> 
+            </ul> 
+        </nav> 
+    </header> 
+ 
+    <main> 
+        <div class="welcome-section"> 
+            <h2>Criado por:</h2> 
+            <p class="about">Joice Hellen e Maisa Alves, estudantes do Instituto Federal do Piauí (IFPI). 
+                Estamos cursando Técnico em Análise e Desenvolvimento de Sistemas e apaixonadas por tecnologia e aprendizado! 
+            </p> 
+        </div> 
+ 
+        <div class="highlight"> 
+            <input type="checkbox" id="expand-image"> 
+            <label for="expand-image"> 
+                <img src="https://media2.giphy.com/media/xGSoEKZgM1eYvoWqd0/200w.gif?cid=6c09b952bqymms7nv2xja1p3swkvsdy6dxijefjq7nmz31bu&ep=v1_gifs_search&rid=200w.gif&ct=g" alt="Imagem animada de cachorros"> 
+            </label>
+        </div> 
+    </main> 
+ 
+    <footer> 
+        <p>&copy; 2025 - Criado por Joice Hellen e Maisa Alves</p> 
+    </footer> 
+</body> 
+</html>
